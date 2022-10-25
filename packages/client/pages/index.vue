@@ -8,7 +8,7 @@
 export default {
     Layout: 'default.vue',
     head: [
-        { title: 'Home | ntohq'}
+        { title: 'Home | ntohq' }
     ]
 }
 </script>

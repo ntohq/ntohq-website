@@ -3,17 +3,19 @@
         <navigationBar></navigationBar>
     </header>
     <main>
-        <h2>Wassup</h2>
         <slot />        
     </main>
+    <navigationFooter></navigationFooter>
 </template>
 
 <script>
-import navigationBar from '@/components/navBar.vue'
+import navigationBar    from '@/components/navBar.vue'
+import navigationFooter from '@/components/navFooter.vue'
 
 export default {
     components: {
-        navigationBar
+        navigationBar,
+        navigationFooter
     }
 }
 </script>
