@@ -1,12 +1,13 @@
 <template>
-    <main>
-        <h1>Hello!</h1>
-    </main>
+    <NuxtLayout>
+        <main>
+            <h1>Hello World!</h1>
+        </main>
+    </NuxtLayout>
 </template>
 
 <script>
 export default {
-    Layout: 'default.vue',
     head: [
         { title: 'Home | ntohq' }
     ]
