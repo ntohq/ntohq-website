@@ -2,9 +2,7 @@
     <header>
         <navigationBar></navigationBar>
     </header>
-    <main>
-        <slot />        
-    </main>
+        <slot />
     <navigationFooter></navigationFooter>
 </template>
 

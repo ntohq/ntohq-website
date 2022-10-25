@@ -10,7 +10,6 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../../../node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin").default> &
   InjectionType<typeof import("../../../../node_modules/nuxt/dist/head/runtime/mixin-plugin").default> &
   InjectionType<typeof import("../../../../node_modules/nuxt/dist/pages/runtime/router").default> &
-  InjectionType<typeof import("../../../../node_modules/nuxt/dist/app/plugins/payload.client").default> &
   InjectionType<typeof import("../../plugins/oruga").default>
 
 declare module '#app' {
