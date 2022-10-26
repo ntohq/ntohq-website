@@ -1,7 +1,5 @@
 <template>
-    <footer>
-        <h3>This is the Footer</h3>
-    </footer>
+    <nav>
+        <h2>The Nav</h2>
+    </nav>
 </template>
-
-<script></script>

@@ -1,8 +1,7 @@
 backend:
   name: test-repo
-  branch: main # Branch to update (optional; defaults to master)
 
-media_folder: static/img
+media_folder: public/img
 public_folder: /img
 
 collections:
