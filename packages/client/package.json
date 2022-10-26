@@ -10,7 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.12"
+    "node-sass": "^7.0.3",
+    "nuxt": "3.0.0-rc.12",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "webpack": "^5.74.0"
   },
   "dependencies": {
     "@oruga-ui/oruga-next": "^0.5.6"
