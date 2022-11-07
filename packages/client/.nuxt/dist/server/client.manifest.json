@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "F:/GitHub/ntohq-website/node_modules/nuxt/dist/app/entry.mjs": {
+  "G:/GitHub/ntohq-website/node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "F:/GitHub/ntohq-website/node_modules/nuxt/dist/app/entry.mjs"
+    "file": "G:/GitHub/ntohq-website/node_modules/nuxt/dist/app/entry.mjs"
   }
 }

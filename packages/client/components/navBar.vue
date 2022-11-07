@@ -1,6 +1,8 @@
 <template>
     <nav>
-        <div id="branding"></div>
+        <div id="branding">
+            <img src="@/assets/images/logo_transparent.png"/>
+        </div>
         <div id="start">
             <ul>
                 <li v-for="navSet in navRoutes">
@@ -13,6 +15,7 @@
                     </NuxtLink>
                 </li>
             </ul>
+            <n-checkbox></n-checkbox>
         </div>
         <div id="end"></div>
     </nav>
@@ -20,11 +23,6 @@
 
 <script>
 export default {
-    // props: {
-    //     start:  Array,
-    //     end:    Array,
-    //     imgSrc: String
-    // }
     data() {
         return {
             navRoutes: [
@@ -48,25 +46,51 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-    ul {
-        list-style: none;
-        display: flex;
+    display: flex;
+    flex-direction: row;    
+    height: 8vh;
+    background-color: #47c7c5;
 
-        li {
-            flex: 1;
-            margin: auto;
+    #branding {
+        flex: 0.3;
 
-            // Navigation Links
-            a {
-                text-decoration: none;
-            }
+        img {
+            height: 8vh;
+        }
+    }
 
-            a:visited {
-                color: red;
-            }
-            
-            a.is-active {
-                color: blue;
+    #start {
+        flex: 1;
+        margin: auto;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                flex: 1 0 10px;
+                margin: auto;
+
+                // Navigation Links
+                a {
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: red;
+                }
+
+                a:active {
+                    color: green;
+                }
+                
+                a.is-active {
+                    color: lightblue;
+                }
+
+                a:link {
+                    color: blue;
+                }
             }
         }
     }
