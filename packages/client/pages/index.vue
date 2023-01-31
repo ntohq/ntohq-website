@@ -1,5 +1,8 @@
 <template>
-    <main>
-        <h1>This is Main</h1>
-    </main>
+    <div>
+        <section class="section">
+            <p>Help</p>
+            <o-checkbox>Basic</o-checkbox>
+        </section>
+    </div>
 </template>

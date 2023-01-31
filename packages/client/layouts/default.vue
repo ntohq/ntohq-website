@@ -1,13 +1,30 @@
 <template>
-    <div id="_container">
-        <NavBar/>
+    <div>
+        <NavigationBar  :navigationRoutes="navigationLinks"/>
         <slot />
-        <NavFooter/>
+        <NavigationFooter/>
     </div>
 </template>
 
-<style lang="scss" scoped>
-    div#_container {
-        height: 100%;
+<script>
+    export default {
+        data() {
+            return {
+                navigationLinks: [
+                    {
+                        link: '/',
+                        name: 'Home'
+                    },
+                    {
+                        link: '/',
+                        name: 'About Us'
+                    },
+                    {
+                        link: '/',
+                        name: 'News'
+                    }
+                ]
+            }
+        }
     }
-</style>
+</script>

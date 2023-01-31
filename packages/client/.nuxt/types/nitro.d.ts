@@ -3,6 +3,13 @@ declare module 'nitropack' {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
     '/__nuxt_error': Awaited<ReturnType<typeof import('../../../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>
+    '/api/_content/query/:qid/**:params': Awaited<ReturnType<typeof import('../../../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>
+    '/api/_content/query/:qid': Awaited<ReturnType<typeof import('../../../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>
+    '/api/_content/query': Awaited<ReturnType<typeof import('../../../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>
+    '/api/_content/cache.json': Awaited<ReturnType<typeof import('../../../../node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>
+    '/api/_content/navigation/:qid/**:params': Awaited<ReturnType<typeof import('../../../../node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>
+    '/api/_content/navigation/:qid': Awaited<ReturnType<typeof import('../../../../node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>
+    '/api/_content/navigation': Awaited<ReturnType<typeof import('../../../../node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>
   }
 }
 declare global {
