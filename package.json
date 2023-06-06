@@ -6,6 +6,6 @@
   "license": "MIT",
   "private": "true",
   "workspaces": [
-    "packages/*"
+    "src/*"
   ]
 }
