@@ -21,6 +21,7 @@ module.exports = {
                     "base-100": "#F3F4F6",
                 },
             },
+            "dark"
         ],
     }
 }; 

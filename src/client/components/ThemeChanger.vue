@@ -5,3 +5,9 @@
         <span class="i-mdi-weather-night hover:i-mdi-weather-night-alert m-auto"></span>
     </div>
 </template>
+
+<script lang="js">
+export default {
+    
+}
+</script>

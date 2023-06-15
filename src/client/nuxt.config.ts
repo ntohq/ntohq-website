@@ -2,8 +2,14 @@
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxt/devtools'
+        '@nuxt/devtools',
+        '@nuxtjs/color-mode'
     ],
+    colorMode: {
+        preference: 'system', // default theme
+        dataValue: 'theme', // activate data-theme in <html> tag
+        classSuffix: '',
+    },
     devtools: {
         enabled: true,
         vscode: {}
