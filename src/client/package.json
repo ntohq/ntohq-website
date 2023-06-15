@@ -1,0 +1,24 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.0.7",
+    "@iconify/json": "^2.2.69",
+    "@types/node": "^18",
+    "nuxt": "^3.5.1"
+  },
+  "dependencies": {
+    "@nuxt/devtools": "^0.5.5",
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.7.0",
+    "daisyui": "^2.51.6"
+  }
+}
