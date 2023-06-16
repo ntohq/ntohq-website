@@ -1,7 +1,6 @@
 <template>
     <div>
-        <LandingHero v-if="IsHomePage"></LandingHero>
-        <NavBar :navigationRoutes="navigationLinks"></NavBar>
+        <LandingHero></LandingHero>
         <slot />
         <NavFooter></NavFooter>
     </div>
@@ -33,15 +32,6 @@ export default {
                 }
             ]
         }
-    },
-    computed: {
-      IsHomePage: function() {
-        if(this.$route.path == "/") {
-          return true
-        } else {
-          return false
-        }
-      }
     }
 }
 </script>
