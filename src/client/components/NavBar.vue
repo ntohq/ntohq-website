@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar bg-base-100" ref="navbar"> <!-- v-scroll="StickyScroll()" -->
+    <div class="navbar bg-base-100">
         <div class="navbar-start">
             <NuxtLink to="/" class="btn btn-ghost normal-case text-xl">ntohq developers</NuxtLink>
             <ul :class="[{ 'is-active': isActive }, 'menu', 'menu-horizontal', 'px-1']">
@@ -27,12 +27,8 @@ export default {
     data() {
         return {
             isActive: false,
-            showNavbar: true
         }
     },
-    methods: {
-        // Methods Here
-    }
 }
 </script>
 
