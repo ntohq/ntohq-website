@@ -1,41 +1,45 @@
 <template>
     <div class="navbar bg-base-100">
         <div class="navbar-start">
-            <NuxtLink to="/" class="btn btn-ghost normal-case text-xl">ntohq developers</NuxtLink>
+            <a href="/" class="btn btn-ghost normal-case text-xl">ntohq developers</a>
             <ul :class="[{ 'is-active': isActive }, 'menu', 'menu-horizontal', 'px-1']">
                 <li v-for="navRoutes in navigationRoutes">
-                    <NuxtLink :to="navRoutes.link">{{ navRoutes.name }}</NuxtLink>
+                    <a :href="navRoutes.link">{{ navRoutes.name }}</a>
                     <ul v-if="navRoutes.dropdown != null || navRoutes.dropdown != undefined" class="bg-white">
                         <li v-for="item in navRoutes.dropdown">
-                            <NuxtLink :to="item.link">{{ item.name }}</NuxtLink>
+                            <a :href="item.link">{{ item.name }}</a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="navbar-end">
-            <ThemeChanger></ThemeChanger>
+            <!-- <ThemeChanger></ThemeChanger> -->
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    props: {
-        navigationRoutes: Array,
-    },
     data() {
         return {
             isActive: false,
+            navigationRoutes: [
+                {
+                    link: '/',
+                    name: 'Home'
+                },
+                {
+                    link: '/about',
+                    name: 'About Us'
+                },
+                {
+                    link: '/blog',
+                    name: 'Blog'
+                },
+                
+            ]
         }
     },
 }
 </script>
-
-<style>
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-</style>
