@@ -3,3 +3,5 @@ node_module/
 */node_modules/
 
 /packages/client/.nuxt
+
+client-old

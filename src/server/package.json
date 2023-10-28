@@ -1,12 +1,26 @@
 {
   "name": "server",
-  "version": "1.0.0",
-  "main": "app.js",
-  "author": "ntohq-developers <github@ntohq.dev>",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Wesley Ford <wes@wesdevpro.com>",
+  "homepage": "https://github.com/ntohq/ntohq-website#readme",
   "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "express": "^4.18.2",
-    "nodemon": "^2.0.20"
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntohq/ntohq-website.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/server.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ntohq/ntohq-website/issues"
   }
 }

@@ -1,11 +1,16 @@
 {
-  "name": "ntohq-website",
-  "version": "1.0.0",
+  "name": "root",
+  "private": true,
   "repository": "https://github.com/ntohq/ntohq-website.git",
   "author": "ntohq-developers <github@ntohq.dev>",
   "license": "MIT",
-  "private": "true",
   "workspaces": [
     "src/*"
-  ]
+  ],
+  "dependencies": {
+    "vue": "^3.3.7"
+  },
+  "devDependencies": {
+    "lerna": "^7.4.1"
+  }
 }
