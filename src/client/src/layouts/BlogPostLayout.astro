@@ -1,0 +1,25 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import Navbar from '@components/Navbar.vue';
+import NavFooter from '@components/NavFooter.astro';
+import PostHeader from '@components/BlogPostHeader.astro'
+
+export interface Props {
+    frontmatter: any;
+}
+
+const { 
+    frontmatter,
+ } = Astro.props as Props;
+---
+
+<BaseLayout title={frontmatter.title} contentType={frontmatter.contentType} description={frontmatter.description} image={frontmatter.image.src}>
+	<Navbar client:load></Navbar>
+	<main class="flex-1 flex flex-col">
+        <PostHeader {frontmatter}/>
+		<div class="content my-5 px-11">
+            <slot/>
+        </div>
+	</main>
+	<NavFooter></NavFooter>
+</BaseLayout>

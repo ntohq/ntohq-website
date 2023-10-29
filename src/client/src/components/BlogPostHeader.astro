@@ -1,0 +1,31 @@
+---
+import {slugify} from '@utils/utils'
+// import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
+
+export interface Props {
+    frontmatter: any;
+}
+
+const { 
+    frontmatter,
+ } = Astro.props as Props;
+---
+
+<header class="m-auto">
+    <div class="container text-center">
+        <h1 class="font-bold text-6xl">{frontmatter.title}</h1>
+        <small class="">
+            <a href={`/category/${slugify(frontmatter.category)}`}>{frontmatter.category}</a>
+        </small>
+        <p>by <a href={frontmatter.author.link}>{frontmatter.author.name}</a> · {`${frontmatter.date}`}</p>
+    </div>
+    <Picture 
+        src={frontmatter.image.src}
+        alt={frontmatter.image.desc}
+        width="1200"
+        height="600"
+        format="avif"
+        quality={80}
+    />
+</header>

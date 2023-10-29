@@ -14,6 +14,7 @@ export default {
             light: {
                 ...themes["[data-theme=light]"],
                 primary: "#02524E",
+                "primary-content":"#ffff", 
                 secondary: "#5A8B5A",
                 accent: "#72A294",
                 neutral: "#003039",
