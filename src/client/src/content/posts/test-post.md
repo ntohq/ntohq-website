@@ -1,19 +1,17 @@
 ---
-layout: "@layouts/BlogPostLayout.astro"
-title: "The Game of Life in Javascript"
-date: 10/29/2023 @4:00pm
-author: {
-    name: "Wesley Ford",
-    link: "https://github.com/wesdevpro",
-}
-contentType: "article"
-category: "Programming"
-description: "Learn how to code the classic Game of Life in JavaScript. This simple but addictive game is a great way to learn about cellular automata and game programming."
-image: {
-    src: "/image/blog/test-post.jpg",
-    desc: "Person sitting on rock in water"
-}
-
+title: The Game of Life in Javascript
+category: Programming
+description: Learn how to code the classic Game of Life in JavaScript. This
+  simple but addictive game is a great way to learn about cellular automata and
+  game programming.
+draft: false
+date: November 1, 2023 - 4:30 AM
+author: Wesley Ford
+image.src: public/image/blog/github-mark.png
+contentType: article
+image:
+  src: /image/blog/test-post.jpg
+  desc: Person sitting on rock in water
 ---
 
 # Creating the Game of Life in JavaScript

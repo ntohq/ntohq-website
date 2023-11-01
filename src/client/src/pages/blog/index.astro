@@ -1,13 +1,38 @@
 ---
 import HomeLayout from "@layouts/HomeLayout.astro";
-import BlogCard from "@components/BlogPostCard.astro"
+import BlogCard from "@components/BlogPostCard.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts", (data) => {
+  return data.data.draft == false;
+});
 ---
 
-<HomeLayout title="About Us · ntohq developers" contentType="website" description="" image="">
-    <header>
-        <h1 class="text-8xl text-center font-bold">ntohq developer blog</h1>
-    </header>
-    <main>
-        <BlogCard></BlogCard>
-    </main>
+<HomeLayout
+  title="About Us · ntohq developers"
+  contentType="website"
+  description=""
+  image=""
+>
+  <header>
+    <h1 class="text-8xl text-center font-bold">ntohq's blog</h1>
+  </header>
+  <main>
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 my-11"
+    >
+      {
+        allPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            desc={post.data.description}
+            category={post.data.category}
+            imageSrc={post.data.image.src}
+            imageDesc={post.data.image.desc}
+            postSlug={post.slug}
+          />
+        ))
+      }
+    </section>
+  </main>
 </HomeLayout>
