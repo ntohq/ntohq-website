@@ -14,6 +14,9 @@ export default defineConfig({
     NetlifyCMS({
       config: {
         backend: {
+          // Development backend settings
+          // name: "tets-repo"
+          // Production backend settings
           name: "github",
           repo: "ntohq/ntohq-website",
           branch: "main"
@@ -127,8 +130,8 @@ export default defineConfig({
                 label: "Category",
                 widget: "relation",
                 collection: "categories",
-                searchFields: ["name"],
-                valueField: "name",
+                search_fields: ["name"],
+                value_field: "name",
               },
               {
                 name: "description",
@@ -154,8 +157,8 @@ export default defineConfig({
                 name: "author",
                 widget: "relation",
                 collection: "authors",
-                searchFields: ["name"],
-                valueField: "name",
+                search_fields: ["name"],
+                value_field: "name",
               },
               {
                 label: "Thumbnail",

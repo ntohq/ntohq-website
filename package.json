@@ -1,16 +1,28 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "client",
+  "type": "module",
+  "version": "0.0.1",
   "repository": "https://github.com/ntohq/ntohq-website.git",
   "author": "ntohq-developers <github@ntohq.dev>",
   "license": "MIT",
-  "workspaces": [
-    "src/*"
-  ],
-  "dependencies": {
-    "vue": "^3.3.7"
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "lerna": "^7.4.1"
+  "dependencies": {
+    "@astrojs/check": "^0.2.1",
+    "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/vue": "^3.0.2",
+    "astro": "^3.4.0",
+    "astro-netlify-cms": "^0.5.4",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^3.9.4",
+    "sass": "^1.69.5",
+    "sharp": "^0.32.6",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
   }
 }
