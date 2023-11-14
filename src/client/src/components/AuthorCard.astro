@@ -1,0 +1,33 @@
+---
+interface Props {
+    name: string;
+    username: string;
+    desc: string;
+    role: Array<string>;
+}
+
+const {
+    name,
+    username,
+    desc,
+    role
+} = Astro.props as Props;
+---
+
+<div class="card w-96 bg-base-100 shadow-xl my-11 mx-auto md:m-auto">
+    <figure class="avatar"><img class="mask mask-circle" src={`https://github.com/${username}.png`} alt="Shoes" /></figure>
+    <div class="card-body">
+        <h2 class="card-title">{name}</h2>
+        <p>
+            {desc}
+        </p>
+        {role.map((roles) => {
+           return <div class="badge badge-outline justify-start">{roles}</div>
+        })}
+        <div>
+            <div class="card-actions justify-end">
+                <a href={`https://github.com/${username}`} class="btn btn-primary">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
