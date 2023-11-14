@@ -16,8 +16,7 @@ export default defineConfig({
         backend: {
           name: "github",
           repo: "ntohq/ntohq-website",
-          branch: "main",
-          site_domain: "https://ntohqdevelopers.com",
+          branch: "main"
         },
         publish_mode: "editorial_workflow",
         collections: [
