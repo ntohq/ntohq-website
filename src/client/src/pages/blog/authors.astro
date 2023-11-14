@@ -1,0 +1,26 @@
+---
+import HomeLayout from "@layouts/HomeLayout.astro";
+import AuthorCard from "@components/AuthorCard.astro";
+
+import { getCollection, getEntry } from 'astro:content';
+
+const allAuthors = await getCollection('authors');
+---
+
+<HomeLayout
+    title="About Us · ntohq developers"
+    contentType="website"
+    description=""
+    image=""
+>
+    <header>
+        <h1 class="text-8xl text-center font-bold">ntohq's blog authors</h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 my-11 gap-11">
+            {allAuthors.map((author) => {
+                return <AuthorCard name={author.data.name} username={author.data.github_user} desc={author.data.description} role={author.data.roles}/>
+            })}
+        </section>
+    </main>
+</HomeLayout>
