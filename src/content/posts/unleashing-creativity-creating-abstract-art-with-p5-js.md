@@ -1,6 +1,6 @@
 ---
 title: "Unleashing Creativity: Creating Abstract Art with p5.js"
-category: Programming
+category: Programming Art
 description: "Note: This post is designed for experimental development use on
   your website and was generated. Embark on a journey at the intersection of art
   and technology with our latest blog post, 'Unleashing Creativity: Creating
@@ -10,7 +10,7 @@ description: "Note: This post is designed for experimental development use on
   express creativity through shapes, colors, and interactive elements. Elevate
   your artistry in the digital realm with this guide to unleashing your
   imagination. Uncover the power of code and color today"
-draft: true
+draft: false
 date: November 14, 2023 - 1:00 PM
 author: Michael Mercedante
 image:
