@@ -14,9 +14,12 @@ export default defineConfig({
     NetlifyCMS({
       config: {
         backend: {
-          name: "test-repo",
+          name: "github",
+          repo: "ntohq/ntohq-website",
           branch: "main",
+          site_domain: "https://ntohqdevelopers.com",
         },
+        publish_mode: "editorial_workflow",
         collections: [
           {
             name: "authors",
@@ -133,7 +136,12 @@ export default defineConfig({
                 widget: "string",
                 label: "Description",
               },
-              {label: "Draft", name: "draft", widget: "boolean", default: true},
+              {
+                label: "Draft",
+                name: "draft", 
+                widget: "boolean", 
+                default: true
+              },
               {
                 name: "date",
                 widget: "date",
